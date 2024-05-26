@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    background: rgb(245, 245, 245) !important;
+    margin: 0;
+}
+
+.custom-navbar{
+    height: 50px;
+    width: 100%;
+    margin-top: 0px;
+    background-color: rgb(206, 213, 255);
+
+}
+
+.custom-search-input{
+    height: 35px; 
+    width: 350px;
+    padding: 5px 15px;
+    border: 1px solid #9e9e9e;
+}
+
+.custom-search-button{
+    position: absolute;
+    right: 0px;
+    width: 50px;
+    height: 35px;
+    padding: 0;
+    top: 0px;
+    border: 1px solid #9e9e9e; /* Remove default border */
+    border-radius: 0 20px 20px 0; /* Rectangular on the left, rounded on the right */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    color: #4e4e4e;
+}
+
+.custom-profile-icon{
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px 20px 20px 20px;
+}

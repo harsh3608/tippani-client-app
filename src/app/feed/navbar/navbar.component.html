@@ -1,1 +1,24 @@
-<p>navbar works!</p>
+<div class="custom-navbar">
+
+    <div>
+        <img src="assets/web_icon.jpg" alt="icon" [height]="40" [width]="60" class="px-2">
+    </div>
+
+    <div style="position: relative;">
+        <input type="text" class="rounded-pill custom-search-input" placeholder="Search Tippani" pInputText
+            [(ngModel)]="searchText" />
+
+        <button type="button" class=" custom-search-button">
+            <span class="pi pi-search">
+            </span>
+        </button>
+    </div>
+
+    <div class="mx-2">
+        <img src="assets/mob_img.jpg" alt="HP" class="custom-profile-icon" >
+        
+    </div>
+
+
+</div>
+ 
