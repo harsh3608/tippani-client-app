@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
 import { ButtonModule } from 'primeng/button';
 import { NavbarComponent } from '../navbar/navbar.component';
+import { CardModule } from 'primeng/card';
+
+
 
 @Component({
   selector: 'app-feed-home',
@@ -9,7 +12,11 @@ import { NavbarComponent } from '../navbar/navbar.component';
   imports: [
     NavbarComponent,
     ScrollPanelModule,
-    ButtonModule
+    ButtonModule,
+    CardModule,
+
+
+
   ],
   templateUrl: './feed-home.component.html',
   styleUrl: './feed-home.component.css'

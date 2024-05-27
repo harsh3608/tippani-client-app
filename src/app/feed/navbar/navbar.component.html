@@ -1,9 +1,10 @@
 <div class="custom-navbar ">
-    <div class="grid">
-        <div class="col-12 md:col-6 lg:col-4">
+    <div class="grid mt-0">
+        <div class="col-12 md:col-6 lg:col-3">
             <img src="assets/web_icon.jpg" alt="icon" [height]="40" [width]="60" class="px-2">
+        <!-- <img src="../../../../public/assets/web_icon.jpg"> -->
         </div>
-        <div class="col-12 md:col-6 lg:col-4" style="position: relative;">
+        <div class="col-12 md:col-6 lg:col-7" style="position: relative;">
             <input type="text" class="custom-search-input" placeholder="Search Tippani" pInputText
                 [(ngModel)]="searchText" />
             <button type="button" class=" custom-search-button">
@@ -11,7 +12,7 @@
                 </span>
             </button>
         </div>
-        <div class="col-12 md:col-6 lg:col-4">
+        <div class="col-12 md:col-6 lg:col-2 flex justify-content-end">
             <img src="assets/mob_img.jpg" alt="HP" class="custom-profile-icon">
         </div>
     </div>

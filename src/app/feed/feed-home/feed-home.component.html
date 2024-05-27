@@ -1,57 +1,49 @@
 <app-navbar></app-navbar>
 
-<div class="container">
-    <div class="row">
-        <div class="col-3">
+<div class="container ">
+    <div class="grid">
+        <div class="col-12 md:col-6 lg:col-2">
             One of three columns
         </div>
-        <div class="col-6">
+        <div class="col-12 md:col-6 lg:col-7">
 
-            <div class="card my-3">
-                <div class="m-2 d-flex">
-                    <img src="assets/mob_img.jpg" alt="HP" style="height: 35px;
-                    width: 35px;
-                    border: none;
-                    border-radius: 20px 20px 20px 20px;">
-
-                    <!-- <button class="btn btn-outline-primary mx-3">
-                        Post a Tippani
-                        <span class="mx-1 pi pi-plus"></span>
-                    </button> -->
-
-                    <div class="mt-0">
-                        <p-button styleClass="postButton" [outlined]="true" label="Post a Tippani"
+            <p-card styleClass="my-3">
+                <div class="grid ">
+                    <div class="col-12 md:col-6 lg:col-2">
+                        <img src="assets/mob_img.jpg" alt="HP" class="feed-profile-pic" >
+                    </div>
+                    <div class="col-12 md:col-6 lg:col-4">
+                        <p-button styleClass="postButton"  [outlined]="true" label="Post a Tippani"
                             icon="pi pi-plus"></p-button>
                     </div>
-
-
-                    <div class="mx-3 mt-1" style="scale: 1.1;">
-                        <span class="pi pi-image text-success mx-1"></span>
-                        <span>Media</span>
+                    <div class="col-12 md:col-6 lg:col-4 mt-3">
+                        <div class="grid">
+                            <div class="mx-3 mt-1" style="scale: 1.1;">
+                                <span class="pi pi-image text-green-500 mx-1"></span>
+                                <span>Media</span>
+                            </div>
+                            <div class="mx-3 mt-1" style="scale: 1.1;">
+                                <span class="pi pi-calendar text-orange-500 mx-1"></span>
+                                <span>Events</span>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="mx-3 mt-1" style="scale: 1.1;">
-                        <span class="pi pi-calendar text-warning mx-1"></span>
-                        <span>Events</span>
-                    </div>
-
                 </div>
-            </div>
+            </p-card>
+
 
             <p-scrollPanel [style]="{ width: '100%', height: 'calc(100vh - 145px)' }">
-                <div class="card my-1">
-                    Lorem ipsum dolor sit amet...
-                </div>
-                <div class="card my-1">
+               
+                <p-card styleClass="feed-card">
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium...
                     <hr>
                     <div>
                         <p-button icon="pi pi-search" [rounded]="true" [text]="true" severity="success" />
                         <p-button icon="pi pi-check" [rounded]="true" />
-                    
-                    </div>
 
-                </div>
+                    </div>
+                </p-card>
+               
                 <div class="card my-1">
                     At vero eos et accusamus et iusto odio dignissimos...
                 </div>
@@ -122,9 +114,8 @@
             </p-scrollPanel>
 
         </div>
-        <div class="col-3">
+        <div class="col-12 md:col-6 lg:col-3">
             One of three columns
         </div>
     </div>
 </div>
-
