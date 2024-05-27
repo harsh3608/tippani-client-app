@@ -3,6 +3,8 @@ import { ScrollPanelModule } from 'primeng/scrollpanel';
 import { ButtonModule } from 'primeng/button';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { CardModule } from 'primeng/card';
+import { SampleData } from '../../../../public/assets/sample-feeds';
+import { Feed } from '../shared/models/feed-models';
 
 
 
@@ -22,5 +24,5 @@ import { CardModule } from 'primeng/card';
   styleUrl: './feed-home.component.css'
 })
 export class FeedHomeComponent {
-
+  sampleFeeds: Feed[] = SampleData.sampleFeeds;
 }
