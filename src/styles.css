@@ -70,11 +70,11 @@ body{
 .scale-point-eight{
     scale: 0.8;
 }
-
-.feed-image{
-
-    
+.scale-point-eight .span{
+    scale: 1.5;
 }
+
+
 
 
 
