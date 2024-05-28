@@ -25,4 +25,9 @@ import { Feed } from '../shared/models/feed-models';
 })
 export class FeedHomeComponent {
   sampleFeeds: Feed[] = SampleData.sampleFeeds;
+isLiked:boolean=true;
+
+
+
+
 }

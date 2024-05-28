@@ -57,7 +57,10 @@
                     </div>
 
                     <div class="flex">
-                        <p-button icon="pi pi-heart" [rounded]="true" [text]="true" severity="success"
+                        <!-- <i class="pi pi-heart-fill custom-heart-icon"></i>
+                        <p-button icon="pi pi-heart-fill" [ngClass]="{isLiked: custom-heart-icon}" [rounded]="true" [text]="true" severity="success"
+                            styleClass="scale-point-eight" label="{{feed.likes}}" /> -->
+                        <p-button icon="pi pi-heart"  [rounded]="true" [text]="true" severity="success"
                             styleClass="scale-point-eight" label="{{feed.likes}}" />
                         <p-button icon="pi pi-comments" [rounded]="true" [text]="true" label="{{feed.comments}}"
                             styleClass="scale-point-eight" />
