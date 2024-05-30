@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-import { commonGuard } from './user/shared/security/guards/common.guard';
 
 export const routes: Routes = [
     {
