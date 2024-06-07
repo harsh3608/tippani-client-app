@@ -74,9 +74,13 @@ body{
     scale: 1.5;
 }
 
+.facebook-button{
+    width: 250px;
+}
 
-
-
+.login-card{
+    margin-left: 20px;
+}
 
 
 
