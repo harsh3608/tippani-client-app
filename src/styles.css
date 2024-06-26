@@ -87,7 +87,14 @@ body {
     scale: 1.5;
 }
 
+.facebook-button{
+    width: 250px;
+}
 
 .add-post-card {
     margin-top: 35px;
+}
+
+.login-card{
+    margin-left: 20px;
 }

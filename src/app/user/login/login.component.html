@@ -1,1 +1,81 @@
-<p>login works!</p>
+<div class="flex flex-row flex-wrap m-5 p-3">
+
+    <p-card styleClass="social-continue-card">
+        <div class=" m-5" style="width: 300px;">
+            <div class=" p-2">
+                <div class=" m-2">
+                    <asl-google-signin-button type='standard' text="continue_with" size='large' [width]="250">
+                    </asl-google-signin-button>
+                </div>
+                <!-- <div class=" m-1">
+                    <button type="button" (click)="signInWithFB()" class="btn btn-primary btn-block">
+                        Signin with Facebook
+                        <i class="bi bi-facebook"></i>
+                    </button>
+                </div> -->
+                <div class="m-2">
+                    <p-button size="small" label="Continue with Facebook" styleClass="facebook-button"
+                        icon="pi pi-facebook" (click)="signInWithFB()" />
+                </div>
+                <div class="m-2">
+                    <p-button label="Continue with Apple" severity="secondary" size="small" icon="pi pi-apple"
+                        styleClass="facebook-button" />
+                </div>
+                <div class="m-2 flex flex-row flex-wrap">
+                    <div class="flex align-items-center justify-content-center w-6rem h-2rem"></div>
+                    <div class="flex align-items-center justify-content-center w-4rem h-2rem">
+                        <span>or</span>
+                    </div>
+                    <div class="flex align-items-center justify-content-center w-4rem h-2rem"></div>
+                </div>
+                <div class="m-2">
+                    <p-button label="Create Account" size="small" severity="info" styleClass="facebook-button" />
+                </div>
+                <div class="m-2"></div>
+                <div class="m-2"></div>
+
+            </div>
+        </div>
+    </p-card> 
+
+    <p-card styleClass="login-card m-5 p-3">
+        <div style="width: 400px; margin-bottom: 40px;">
+            <span>Already have an account? sign-in</span>
+        </div>
+
+        <div style="margin-bottom: 30px;">
+            <p-floatLabel>
+                <input pInputText id="username" formControlName="text" style="width: 350px;" />
+                <label for="username">Username</label>
+            </p-floatLabel>
+        </div>
+        <div class="my-2 custom-password">
+            <p-floatLabel>
+                <p-password formControlName="password" [toggleMask]="true">
+                    <!-- <ng-template pTemplate="header">
+                        <h6>Pick a password</h6>
+                    </ng-template> -->
+                    <ng-template pTemplate="footer">
+                        <p-divider></p-divider>
+                        <p class="mt-2">Suggestions</p>
+                        <ul class="pl-2 ml-2 mt-0" style="line-height: 1.5">
+                            <li>At least one lowercase</li>
+                            <li>At least one uppercase</li>
+                            <li>At least one numeric</li>
+                            <li>Minimum 8 characters</li>
+                        </ul>
+                    </ng-template>
+                </p-password>
+                <label for="password">Password</label>
+            </p-floatLabel>
+        </div>
+        <div class="my-3 flex justify-content-center">
+            <button pButton pRipple label="Submit" class="p-button-success">
+            </button>
+        </div>
+
+
+
+    </p-card>
+
+</div>
