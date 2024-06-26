@@ -1,18 +1,18 @@
-body{
+body {
     background: rgb(245, 245, 245) !important;
     margin: 0;
 }
 
-.custom-navbar{
+.custom-navbar {
     height: 54px;
     width: 100%;
     margin-top: 0px;
     background-color: rgb(206, 213, 255);
-
+    position: fixed;
 }
 
-.custom-search-input{
-    height: 35px; 
+.custom-search-input {
+    height: 35px;
     width: 350px;
     padding: 5px 15px;
     border: 1px solid #9e9e9e;
@@ -20,21 +20,33 @@ body{
     margin-top: 6px;
 }
 
-.custom-search-button{
-    position: relative; 
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: unset !important;
+    margin-left: unset !important;
+    margin-top: unset !important;
+}
+
+.custom-search-button {
+    position: relative;
     right: 50px;
     width: 50px;
     height: 35px;
     padding: 0;
     /* top: 4px; */
-    border: 1px solid #9e9e9e; /* Remove default border */
-    border-radius: 0 20px 20px 0; /* Rectangular on the left, rounded on the right */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    border: 1px solid #9e9e9e;
+    /* Remove default border */
+    border-radius: 0 20px 20px 0;
+    /* Rectangular on the left, rounded on the right */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
     color: #4e4e4e;
 }
 
-.custom-profile-icon{
+.custom-profile-icon {
     height: 35px;
     width: 35px;
     cursor: pointer;
@@ -51,11 +63,11 @@ body{
     padding: 0 !important;
 }
 
-.postButton{
-   scale: 0.8 !important;
+.postButton {
+    scale: 0.8 !important;
 }
 
-.feed-card{
+.feed-card {
     margin-top: 10px;
 }
 
@@ -67,10 +79,11 @@ body{
     padding: 5px !important;
 }
 
-.scale-point-eight{
+.scale-point-eight {
     scale: 0.8;
 }
-.scale-point-eight .span{
+
+.scale-point-eight .span {
     scale: 1.5;
 }
 
@@ -78,11 +91,10 @@ body{
     width: 250px;
 }
 
+.add-post-card {
+    margin-top: 35px;
+}
+
 .login-card{
     margin-left: 20px;
 }
-
-
-
-
-
