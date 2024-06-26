@@ -3,6 +3,9 @@ import { CardModule } from 'primeng/card';
 import { FacebookLoginProvider, GoogleSigninButtonModule, SocialAuthService, SocialLoginModule, SocialUser } from '@abacritt/angularx-social-login';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
+import { FloatLabelModule } from 'primeng/floatlabel';
+import { DividerModule } from 'primeng/divider';
+import { PasswordModule } from 'primeng/password';
 
 @Component({
   selector: 'app-login',
@@ -12,7 +15,10 @@ import { InputTextModule } from 'primeng/inputtext';
     SocialLoginModule,
     GoogleSigninButtonModule,
     ButtonModule,
-    InputTextModule
+    InputTextModule,
+    FloatLabelModule,
+    PasswordModule,
+    DividerModule, 
   ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
